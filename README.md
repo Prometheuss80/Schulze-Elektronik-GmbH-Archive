@@ -81,6 +81,14 @@ It was manufactured and successfully tested, operating on the principle of a ROM
 
 The goal was to understand the original calibration system and reproduce the functionality needed to calibrate the existing Schulze device.
 
+The original standalone XTOOLS remains part of the archive. A later, integrated XTOOLS implementation has also been developed for the ISL8 firmware, including calibration editing and Timekeeper service functions.
+
+---
+
+### ISL6 XTOOLS and GUI
+
+Completed XTOOLS and GUI development projects for the ISL6 family will be documented separately in this archive. Their project pages will describe supported models, implementation details and hardware testing.
+
 ---
 
 ### LipoProfiBal06
@@ -113,7 +121,27 @@ Where firmware modifications are required, the preferred approach of this reposi
 
 The user should obtain the original firmware from their own device and apply the documented modification locally.
 
-The procedure for modifying the 8.50EN firmware for the ILS8-936G charger will be presented here, which will enable the factory hidden voltage calibration routine to be run.
+A hardware-tested **Factory Calibration F2 Patcher** is available for ISL8 firmware versions **8.10 DE, 8.10 EN, 8.50 DE and 8.50 EN**. It enables access to the existing factory calibration procedure through F2, changes the displayed firmware identification, and updates the modification date and time. The patching tool verifies the SHA-256 of the user-supplied original firmware and does not redistribute Schulze firmware images.
+
+---
+
+## Author
+
+**Martin Stránský (Prometheuss80)**
+
+Independent research, firmware reverse engineering, development, hardware analysis and testing.
+
+Copyright © 2026 Martin Stránský (Prometheuss80).
+
+GitHub: [Prometheuss80](https://github.com/Prometheuss80)
+
+---
+
+## Licensing
+
+Original tools and code authored for this archive may be released under the **MIT License**; see the `LICENSE` file or the license stated within each project directory for the exact scope.
+
+The MIT License does **not** apply to original Schulze Elektronik firmware or third-party materials unless their respective rights holders authorize it. Individual project directories may have their own licensing terms.
 
 ---
 
@@ -182,7 +210,9 @@ The information in this repository is provided for research, repair, and educati
 
 **Work in progress.**
 
-A significant amount of reverse engineering has already been completed, particularly for the platform
+A significant amount of reverse engineering has already been completed, particularly for the ISL8 platform. The standalone ISL8 XTOOLS, integrated ISL8 XTOOLS, ISL6 XTOOLS and ISL6 GUI projects have reached working, hardware-tested milestones. Other investigations and documentation remain ongoing.
+
+This independent archive is maintained by Martin Stránský (Prometheuss80).
 
 It is not affiliated with, sponsored by, or endorsed by Schulze Elektronik.
 
