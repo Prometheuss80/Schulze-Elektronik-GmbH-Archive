@@ -1,0 +1,12 @@
+# Never commit firmware images or Keil build artefacts
+*.bin
+*.BIN
+*.hex
+*.HEX
+*.omf
+*.OBJ
+*.LST
+*.M51
+__pycache__/
+*.py[cod]
+.venv/
