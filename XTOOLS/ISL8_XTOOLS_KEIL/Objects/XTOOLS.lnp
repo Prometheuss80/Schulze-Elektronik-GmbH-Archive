@@ -1,3 +1,0 @@
-".\Objects\XTOOLS.obj" 
-TO ".\Objects\XTOOLS" 
-PRINT(".\Listings\XTOOLS.m51") RAMSIZE(256) 
