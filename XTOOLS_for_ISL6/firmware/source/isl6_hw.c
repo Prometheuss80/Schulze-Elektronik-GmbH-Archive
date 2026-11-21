@@ -1,0 +1,9 @@
+#include "isl6_hw.h"
+void HW_Init(void)
+{
+ EA=0; P1=0xFF; P3=0xFF; P4=0xFF;
+ /* Keep P5.4..P5.7 released until HW mode is selected. */
+ P5=0xFF; P5_1_UNKNOWN=0; P5_2_UNKNOWN=0;
+ PCON=0x80; ADCON|=0x80; SCON=0x52; IP0=0x21; IP1=0x09;
+ CCL1=0xFF; CCH1=0xFF; CCL2=0xFF; CCH2=0xFF; CCL3=0xFF; CCH3=0xFF; CRCH=0xFB; CRCL=0xFF; CCEN=0; T2CON=0x11; RI=0; TI=0;
+}

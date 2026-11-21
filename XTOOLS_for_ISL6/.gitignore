@@ -1,0 +1,14 @@
+# Local EEPROM dumps may contain serial numbers and calibration data
+ISL6_EEPROM_*.txt
+*dum*.txt
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.uvopt
+*.uvguix.*
+*.obj
+*.lst
+*.m51
+*.map
+*.bak
