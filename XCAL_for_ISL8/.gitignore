@@ -1,0 +1,10 @@
+# Do not commit charger firmware or personal EEPROM/Timekeeper dumps
+*.bin
+*.hex
+*.uf2
+*.rar
+*.xls
+__pycache__/
+*.pyc
+*.bak
+.DS_Store

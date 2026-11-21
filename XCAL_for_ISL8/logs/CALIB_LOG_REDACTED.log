@@ -1,0 +1,107 @@
+>>> %Run -c $EDITOR_CONTENT
+
+MPY: soft reboot
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+
+RX: (c)1994-2004 schulze elektronik gmbh
+RX: Devicetype:    isl8-936g
+RX: Devicenumber:       [REDACTED]
+RX: SoftwareVersion:    8.60
+RX: Date:           03.07.26
+RX: DayOfWeek,Time: fr 20:23
+RX: Owner:          schulze elektronik gmbh
+
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%   0t  65o A2 999%   0t  92o A3 999%   2t  13o Au 999%   0t
+
+RX: (5) Start CAL
+RX: (5) SetUref: 0
+UREF = 12.600V
+RX: -> 12600 <- A1  -3%   0t  65o A2-999%   0t  92o A3   0%   2t  13o Au -39%   0t
+RX: -> 12600 <- A1   0%   0t  65o A2  -1%   0t  92o A3   0%   2t  13o Au -39%   0t
+RX: -> 12600 <- A1   0%   0t  65o A2   0%   0t  92o A3   0%   2t  13o Au -39%   0t
+
+RX: (8) SetUref:10
+UREF = 3.000V
+RX: ->  3000 <- A1   3%   0t  65o A2 999%   0t  92o A3  -2%   2t  13o Au 999%   0t
+RX: ->  3000 <- A1   3%   0t  65o A2   2%   0t  92o A3  -2%   2t  13o Au 999%   0t
+RX: ->  3000 <- A1   3%   0t  65o A2   2%   0t  92o A3  -2%   2t  13o Au 999%   0t
+RX: ->  3000 <- A1   3%   0t  65o A2   2%   0t  92o A3  -2%   2t  13o Au 999%   0t
+
+RX: setze_offs(   0,   0,   0)
+RX: setze_rtol(   0,   0,   0,   0)
+
+RX: ->  3000 <- A1  25%   0t   0o A2  32%   0t   0o A3   5%   0t   0o Au 999%   0t
+
+RX: (18) SetUref: 8
+UREF = 4.200V
+RX: ->  4200 <- A1  13%   0t   0o A2  21%   0t   0o A3   5%   0t   0o Au 999%   0t
+RX: ->  4200 <- A1  13%   0t   0o A2  21%   0t   0o A3   5%   0t   0o Au 999%   0t
+RX: ->  4200 <- A1  13%   0t   0o A2  21%   0t   0o A3   5%   0t   0o Au 999%   0t
+RX: ->  4200 <- A1  13%   0t   0o A2  21%   0t   0o A3   5%   0t   0o Au 999%   0t
+
+RX: (23) SetUref: 4
+UREF = 8.400V
+RX: ->  8400 <- A1   7%   0t   0o A2-958%   0t   0o A3   4%   0t   0o Au 443%   0t
+RX: ->  8400 <- A1   7%   0t   0o A2   9%   0t   0o A3   4%   0t   0o Au 443%   0t
+RX: ->  8400 <- A1   7%   0t   0o A2   9%   0t   0o A3   4%   0t   0o Au 443%   0t
+RX: ->  8400 <- A1   7%   0t   0o A2   9%   0t   0o A3   4%   0t   0o Au 443%   0t
+
+RX: (29) SetUref: 0
+UREF = 12.600V
+RX: -> 12600 <- A1   2%   0t   0o A2  -1%   0t   0o A3   2%   0t   0o Au -39%   0t
+RX: -> 12600 <- A1   2%   0t   0o A2   5%   0t   0o A3   2%   0t   0o Au -39%   0t
+RX: -> 12600 <- A1   2%   0t   0o A2   5%   0t   0o A3   2%   0t   0o Au -39%   0t
+
+RX: (35) Rtol/Offs Berechnung
+RX: setze_rtol(  -2,  -2,   2,   0)
+RX: setze_offs(  72,  99,  13)
+RX: (CAL=  0) fertig
+
+RX: (35) SetUref:10
+UREF = 3.000V
+RX: ->  3000 <- A1 999%  -2t  72o A2 999%  -2t  99o A3  -3%   2t  13o Au 999%   0t
+RX: ->  3000 <- A1   3%  -2t  72o A2   1%  -2t  99o A3  -3%   2t  13o Au 999%   0t
+RX: ->  3000 <- A1   3%  -2t  72o A2   1%  -2t  99o A3  -3%   2t  13o Au 999%   0t
+RX: ->  3000 <- A1   3%  -2t  72o A2   1%  -2t  99o A3  -3%   2t  13o Au 999%   0t
+
+RX: (41) SetUref: 8
+UREF = 4.200V
+RX: ->  4200 <- A1  -3%  -2t  72o A2   0%  -2t  99o A3  -1%   2t  13o Au 999%   0t
+RX: ->  4200 <- A1  -3%  -2t  72o A2   0%  -2t  99o A3  -1%   2t  13o Au 999%   0t
+RX: ->  4200 <- A1  -3%  -2t  72o A2   0%  -2t  99o A3  -1%   2t  13o Au 999%   0t
+RX: ->  4200 <- A1  -3%  -2t  72o A2   0%  -2t  99o A3  -1%   2t  13o Au 999%   0t
+
+RX: (47) SetUref: 4
+UREF = 8.400V
+RX: ->  8400 <- A1   0%  -2t  72o A2   0%  -2t  99o A3   0%   2t  13o Au 443%   0t
+RX: ->  8400 <- A1   0%  -2t  72o A2   0%  -2t  99o A3   0%   2t  13o Au 443%   0t
+RX: ->  8400 <- A1   0%  -2t  72o A2   0%  -2t  99o A3   0%   2t  13o Au 443%   0t
+
+RX: (53) SetUref: 0
+UREF = 12.600V
+RX: -> 12600 <- A1  -1%  -2t  72o A2-501%  -2t  99o A3   0%   2t  13o Au -39%   0t
+RX: -> 12600 <- A1  -1%  -2t  72o A2   0%  -2t  99o A3   0%   2t  13o Au -39%   0t
+RX: -> 12600 <- A1  -1%  -2t  72o A2   0%  -2t  99o A3   0%   2t  13o Au -39%   0t
+RX: -> 12600 <- A1  -1%  -2t  72o A2   0%  -2t  99o A3   0%   2t  13o Au -39%   0t
+
+RX: (59) SetUref: 0
+UREF = 12.600V
+RX: (CHK=  0) fertig
+CALIBRATION FINISHED
+
+RX: ->     0 <- A1 999%  -2t  72o A2 999%  -2t  99o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%  -2t  72o A2 999%  -2t  99o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%  -2t  72o A2 999%  -2t  99o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%  -2t  72o A2 999%  -2t  99o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%  -2t  72o A2 999%  -2t  99o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%  -2t  72o A2 999%  -2t  99o A3 999%   2t  13o Au 999%   0t
+RX: ->     0 <- A1 999%  -2t  72o A2 999%  -2t  99o A3 999%   2t  13o Au 999%   0t
+
