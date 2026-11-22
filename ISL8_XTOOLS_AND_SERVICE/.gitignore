@@ -1,0 +1,31 @@
+# Keil-generated build outputs
+Objects/
+Listings/
+*.obj
+*.lst
+*.m51
+*.lnp
+*.build_log.htm
+*.uvgui.*
+*.uvopt
+*.uvoptx
+*.uvguix.*
+*.bak
+*.tmp
+
+# Firmware images / dumps: review rights before publishing
+*.bin
+*.hex
+*.ihx
+*.rom
+*.dump
+
+# Tools/binaries and local configuration
+*.exe
+*.xdf
+*.cfg
+
+# Local/editor artifacts
+.DS_Store
+Thumbs.db
+__pycache__/
