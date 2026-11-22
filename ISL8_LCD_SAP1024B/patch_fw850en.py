@@ -293,20 +293,26 @@ def to_intel_hex(payload):
 
 def main():
     parser = argparse.ArgumentParser(description='Schulze 8.50 EN SAP1024B graphic LCD driver patch (PASS 10F)')
-    parser.add_argument('input', type=Path, help='Your original unmodified fw850en.bin')
+    parser.add_argument('input', nargs='?', type=Path, default=None,
+                        help='Your original unmodified fw850en.bin (optional; defaults to file next to script)')
     parser.add_argument('-o', '--output', type=Path, default=None, help='Output .bin path')
     parser.add_argument('--hex', action='store_true', help='Also save an Intel HEX image next to the BIN')
     args = parser.parse_args()
-    source = args.input.resolve()
+    # IDE-friendly: pressing Run without arguments uses the ROM beside this script.
+    source = (args.input if args.input is not None else Path(__file__).resolve().parent / 'fw850en.bin').resolve()
     output = (args.output or source.with_name('fw850en_sap1024b.bin')).resolve()
     if output == source:
         parser.error('Output must differ from input (the original ROM will never be overwritten).')
+    if not source.is_file():
+        parser.exit(2, f'ERROR: Input ROM not found: {source}\n'
+                       'Place your original fw850en.bin next to patch_fw850en.py, or pass its path as an argument.\n')
     try:
         rom = patch_rom(source.read_bytes())
     except (ValueError, RuntimeError, OSError) as error:
         parser.exit(2, f'ERROR: {error}\n')
     output.write_bytes(rom)
-    if args.hex:
+    # With no CLI input argument, generate both formats by default (IDE Run).
+    if args.hex or args.input is None:
         output.with_suffix('.hex').write_text(to_intel_hex(rom), encoding='ascii')
     print(f'Patched {source.name} -> {output.name}')
     print(f'SHA-256: {hashlib.sha256(rom).hexdigest()}')
