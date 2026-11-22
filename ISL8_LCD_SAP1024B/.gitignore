@@ -1,0 +1,9 @@
+# Proprietary ROMs and locally generated patched output
+*.bin
+*.hex
+*.a51
+*.A51
+*.rar
+__pycache__/
+.pytest_cache/
+.DS_Store
